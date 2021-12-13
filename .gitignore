@@ -1,0 +1,6 @@
+# IDEA
+.idea/*
+target/*
+out/*
+*.iml
+.doc/*

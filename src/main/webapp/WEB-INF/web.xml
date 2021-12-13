@@ -1,0 +1,34 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>WebPage</servlet-name>
+        <servlet-class>group14.WebPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WebPage</servlet-name>
+        <url-pattern>/we</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sql init</servlet-name>
+        <servlet-class>group14.XMLtoDB</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sql init</servlet-name>
+        <url-pattern>/init/mysql</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>list students</servlet-name>
+        <servlet-class>group14.DBtoJSON</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>list students</servlet-name>
+        <url-pattern>/students</url-pattern>
+    </servlet-mapping>
+</web-app>
